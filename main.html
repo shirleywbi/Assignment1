@@ -6,33 +6,41 @@
     <title>Assignment 1</title>
 </head>
   
-<body>
-<div class="nav-bar">
-    <a href="main.html">Home</a>
-    <a href="about.html">About</a>
-</div>
+<body class="full-body">
+
 <div>
-    <form>
-        <label>
-            Message
-            <input type="text" id="item"/>
-        </label>
-        <br />
-        <button id="add" class="button" onclick="addToTable();">Add</button>
-        <button id="clear" class="button" onclick="clearContent();">Clear</button>
-    </form>
+    <ul class="nav-bar">
+        <li class="nav-list"><a class="nav-link" href="main.html">Home</a></li>
+        <li class="nav-list"><a class="nav-link" href="about.html">About</a></li>
+    </ul>
 </div>
 
-<div id="msg-log">
-    <h3>Message Log</h3>
-    <div id="msg-list" class="table">
-        <ul>
-            <li>Bullet 1</li>
-            <li>Bullet 2</li>
-            <li>Bullet 3</li>
-        </ul>
+
+
+<div id="content">
+    <div>
+        <form>
+            <label>
+                <strong>MESSAGE</strong>
+                <br/>
+                <input type="text" id="item"/>
+            </label>
+            <br />
+            <button id="add" class="button" onclick="addToTable();">Add</button>
+            <button id="clear" class="button" onclick="clearContent();">Clear</button>
+        </form>
+    </div>
+
+    <div id="msg-log">
+        <h3>MESSAGE BOARD</h3>
+        <div id="msg-list" class="table">
+            <ul>
+                <li>Bullet 1</li>
+                <li>Bullet 2</li>
+                <li>Bullet 3</li>
+            </ul>
+        </div>
     </div>
 </div>
-  
 </body>
 </html>
