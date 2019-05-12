@@ -1,5 +1,5 @@
 function clearTextArea() {
-  document.getElementById('new-msg').innerText = "";
+  document.getElementById('new-msg').value = "";
   // TODO: Debug - Clear All > Clear adds back message board 
   // -- might be b/c it is in form? refreshes everything?
 }
@@ -17,8 +17,7 @@ function addToTable() {
     let textnode = document.createTextNode(text);
     node.appendChild(textnode);
     document.getElementById('msg-list').appendChild(node);
-    console.log(document.getElementById('msg-list'));
-    console.log(text);
+    clearTextArea();
   } catch (err) {
     console.log(err);
   }
