@@ -1,13 +1,14 @@
 .full-body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
+    /* background-color: lightcyan; */
 }
 
 .button {
     border: none;
     padding: .5rem;
     margin-left: 1rem;
-    width: 4rem;
+    width: 6rem;
 }
 
 #content {
@@ -66,6 +67,7 @@
 
 .msg {
     border: 1px solid #e2e2e2;
+    font-style: italic;
     margin: 1rem;
     padding: 1rem;
     text-decoration: none;
