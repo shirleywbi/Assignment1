@@ -50,6 +50,13 @@ html, body {
     margin-right: 25%;
 }
 
+#about-me-content {
+    padding: 0;
+    margin-top: 4%;
+    margin-left: 25%;
+    margin-right: 10%;
+}
+
 .sub-content {
     padding: 0;
     margin: 2rem;
@@ -135,3 +142,30 @@ a {
     background-color: white;
 }
 
+/* About Me */
+.highlight-text {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.text {
+    color: white;
+    text-align: right;
+    overflow: hidden;
+}
+
+.link {
+    color: white;
+}
+
+.link:visited {
+    color: lightyellow;
+}
+
+#links {
+    list-style: none;
+}
+
+#pic-block {
+    text-align: right;
+}
