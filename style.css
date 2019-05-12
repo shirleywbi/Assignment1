@@ -1,14 +1,32 @@
 .full-body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.button {
+    border: none;
+    padding: .5rem;
+    margin-left: 1rem;
+    width: 4rem;
 }
 
 #content {
-    max-width: 960px;
-    margin: auto;
+    padding: 0;
+    margin: 1rem;
 }
 
-#item {
-    background-color: yellow;
+/* Add Message */
+
+#new-msg {
+    font-size: 14px;
+    position: relative;
+    padding: .2rem;
+    margin-top: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 98%;
+    resize: none;
 }
 
 #msg-log {
@@ -36,4 +54,19 @@
 
 .nav-link:hover {
     background-color: black;
+}
+
+/* Message Board */
+
+#msg-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.msg {
+    border: 1px solid #e2e2e2;
+    margin: 1rem;
+    padding: 1rem;
+    text-decoration: none;
 }

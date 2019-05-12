@@ -7,7 +7,7 @@ function clearAll() {
 }
 
 function addToTable() {
-  let item = document.getElementById('item').value; // debug this
+  let item = document.getElementById('new-item').value; // debug this
   let node = document.createElement('li');
   let textnode = document.createTextNode(item);
   node.appendChild(textnode);

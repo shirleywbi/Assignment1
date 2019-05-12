@@ -15,31 +15,34 @@
     </ul>
 </div>
 
-
-
 <div id="content">
-    <div>
-        <form>
-            <label>
-                <strong>MESSAGE</strong>
-                <br/>
-                <input type="text" id="item"/>
-            </label>
+    <div id="add-msg-block">
+        <form id="add-msg-form">
+            <h2 id="msg-header" class="header">MESSAGE</h2>
+            <textarea id="new-msg" rows="5" cols="90" placeholder="Enter your message..."></textarea>
             <br />
             <button id="add" class="button" onclick="addToTable();">Add</button>
             <button id="clear" class="button" onclick="clearContent();">Clear</button>
         </form>
     </div>
-
-    <div id="msg-log">
-        <h3>MESSAGE BOARD</h3>
-        <div id="msg-list" class="table">
-            <ul>
-                <li>Bullet 1</li>
-                <li>Bullet 2</li>
-                <li>Bullet 3</li>
-            </ul>
-        </div>
+    <br/>
+    <br/>
+    <div id="msg-block">
+        <h2 id="msg-board-header" class="header">MESSAGE BOARD</h2>
+        <ul id="msg-list">
+            <em>
+                <li class="msg">"Good morning, Starshine."</li>
+                <li class="msg">The earth says hello...</li>
+                <li class="msg">You twinkle above us.</li>
+                <li class="msg">We twinkle below.</li>
+                <li class="msg">Good night.</li>
+                <li class="msg">Hello.</li>
+                <li class="msg">Can you hear me?</li>
+                <li class="msg">I've been wondering if after all these years you'd like to meet.</li>
+                <li class="msg">I don't know the rest of the song. I think this is enough test items. Keep going. Need more text so that it either wraps or scrolls or cuts off.</li>
+                <li class="msg"></li>
+            </em>
+        </ul>
     </div>
 </div>
 </body>
