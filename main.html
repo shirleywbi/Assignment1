@@ -6,7 +6,7 @@
     <title>Assignment 1</title>
 </head>
   
-<body class="full-body">
+<body class="full-body" onload="loadMessages();">
 
 <div>
     <ul class="nav-bar">
@@ -21,7 +21,7 @@
             <h2 id="msg-header" class="header">MESSAGE</h2>
             <textarea id="new-msg" rows="5" cols="90" placeholder="Enter your message..."></textarea>
             <br />
-            <button id="add" class="button" onclick="addToTable();">Add</button>
+            <button id="add" class="button" onclick="addNewMessage();">Add</button>
             <button id="clear" class="button" onclick="clearTextArea();">Clear</button>
         </form>
     </div>
@@ -29,14 +29,7 @@
     <div id="msg-block">
         <h2 id="msg-board-header" class="header">MESSAGE BOARD</h2>
         <button id="clear" class="button" onclick="clearAll();">Clear All</button>
-        <ul id="msg-list">
-            <li class="msg">"Good morning, Starshine."</li>
-            <li class="msg">The earth says hello...</li>
-            <li class="msg">You twinkle above us.</li>
-            <li class="msg">We twinkle below.</li>
-            <li class="msg">Good night.</li>
-            <li class="msg">I don't know the rest of the song. I think this is enough test items. Keep going. Need more text so that it either wraps or scrolls or cuts off.</li>
-        </ul>
+        <ul id="msg-list"></ul>
     </div>
 </div>
 </body>
