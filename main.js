@@ -51,7 +51,7 @@ function addMessage(msg) {
 function addDeleteButton(node) {
   let button = document.createElement('button');
   button.textContent = "x";
-  button.className = "msg-delete-btn";
+  button.className = "msg-delete-btn button";
   button.addEventListener('click', deleteMessage);
   node.appendChild(button);
 }

@@ -8,3 +8,7 @@
 
 #### Bugs:
 - Leaving Home > About > Home resets - not saved
+
+
+
+*** Background image is property of Life is Strange 2, developed by Dontnod Entertainment and produced by Square Enix.
