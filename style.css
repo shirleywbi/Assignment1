@@ -1,14 +1,24 @@
+/* General */
+
 .full-body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
-    /* background-color: lightcyan; */
+    background-color: rgba(206, 219, 221, 0.534);
 }
 
 .button {
+    position: relative;
+    left: 1rem;
     border: none;
+    border-radius: 2px;
     padding: .5rem;
-    margin-left: 1rem;
     width: 6rem;
+    box-shadow: inset -1px -1px 1px 0px rgb(95, 95, 95);
+
+}
+
+.button:hover {
+    background-color: rgb(180, 180, 180);
 }
 
 #content {
@@ -16,18 +26,23 @@
     margin: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Add Message */
 
 #new-msg {
     font-size: 14px;
     position: relative;
-    padding: .2rem;
+    left: 1rem;
     margin-top: 0;
     margin-right: 1rem;
-    margin-left: 1rem;
     margin-bottom: 1rem;
+    padding: .2rem;
     width: 98%;
     resize: none;
+    border: 1px solid rgb(95, 95, 95);
 }
 
 #msg-log {
@@ -71,4 +86,18 @@
     margin: 1rem;
     padding: 1rem;
     text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.555);
+}
+
+.msg:hover {
+    background-color: #fadd7ed7;
+}
+
+.msg-delete-btn {
+    position: absolute;
+    right: 60px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    box-shadow: inset -1px -1px 1px 0px rgb(95, 95, 95);
 }

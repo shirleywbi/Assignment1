@@ -1,7 +1,15 @@
-let msgs = '[{"text":"Never gonna give you up"},'
-            + '{"text":"Never gonna let you down"},'
-            + '{"text":"Never gonna run around and desert you"},'
-            + '{"text":"Never gonna make you cry"}]';
+ let msgs = '[{"text":"We\'re no strangers to love. '
++ 'You know the rules and so do I. '
++ 'A full commitment\'s what I\'m thinking of. '
++ 'You wouldn\'t get this from any other guy."},'
++ '{"text":"I just wanna tell you how I\'m feeling... '
++ 'Gotta make you understand..."},'
++ '{"text":"Never gonna give you up. '
++ 'Never gonna let you down. '
++ 'Never gonna run around and desert you. '
++ 'Never gonna make you cry. '
++ 'Never gonna say goodbye."},'
++ '{"text":"Never gonna tell a lie and hurt you."}]';
 
 function loadMessages() {
   msgs = JSON.parse(msgs);
@@ -12,12 +20,8 @@ function loadMessages() {
   }
 };
 
-// window.onload = loadMessages;
-
 function clearTextArea() {
   document.getElementById('new-msg').value = "";
-  // TODO: Debug - Clear All > Clear adds back message board 
-  // -- might be b/c it is in form? refreshes everything?
 }
 
 function clearAll() {
@@ -41,4 +45,18 @@ function addMessage(msg) {
   let textnode = document.createTextNode(msg);
   node.appendChild(textnode);
   document.getElementById('msg-list').appendChild(node);
+  addDeleteButton(node);
+}
+
+function addDeleteButton(node) {
+  let button = document.createElement('button');
+  button.textContent = "x";
+  button.className = "msg-delete-btn";
+  button.addEventListener('click', deleteMessage);
+  node.appendChild(button);
+}
+
+function deleteMessage() {
+  let node = this.parentNode;
+  node.remove();
 }
