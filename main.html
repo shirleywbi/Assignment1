@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript" src="./main.js"></script>
+    <title>Assignment 1</title>
+</head>
+  
+<body>
+<div class="nav-bar">
+    <a href="main.html">Home</a>
+    <a href="about.html">About</a>
+</div>
+<div>
+    <form>
+        <label>
+            Message
+            <input type="text" id="item"/>
+        </label>
+        <br />
+        <button id="add" class="button" onclick="addToTable();">Add</button>
+        <button id="clear" class="button" onclick="clearContent();">Clear</button>
+    </form>
+</div>
+
+<div id="msg-log">
+    <h3>Message Log</h3>
+    <div id="msg-list" class="table">
+        <ul>
+            <li>Bullet 1</li>
+            <li>Bullet 2</li>
+            <li>Bullet 3</li>
+        </ul>
+    </div>
+</div>
+  
+</body>
+</html>
